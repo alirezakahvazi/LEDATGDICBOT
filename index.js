@@ -1,8 +1,9 @@
 const TelegramBot = require('node-telegram-bot-api');
 const fs = require('fs');
+const tgtoken = process.env.TOKEN
 
 // replace the value below with the Telegram token you receive from @BotFather
-const token = 'TOKEN';
+const token = tgtoken;
 
 // Create a bot that uses 'polling' to fetch new updates
 const bot = new TelegramBot(token, {polling: true});
