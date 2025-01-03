@@ -1,3 +1,5 @@
+import { createRequire } from 'module'
+const require = createRequire(import.meta.url)
 const TelegramBot = require('node-telegram-bot-api');
 const fs = require('fs');
 const tgtoken = process.env.TOKEN
