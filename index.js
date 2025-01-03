@@ -1,5 +1,5 @@
-import {TelegramBot} from 'node-telegram-bot-api'
-import fs from 'fs'
+import {TelegramBot} from 'node-telegram-bot-api';
+import { readFile } from "node:fs";
 const tgtoken = process.env.TOKEN
 
 // replace the value below with the Telegram token you receive from @BotFather
@@ -41,7 +41,7 @@ bot.onText(/\/echo (.+)/, (msg, match) => {
 bot.on('message', (msg) => {
   const { message_id: originalMessageId, from: userid } = msg;
   const chatId = msg.chat.id;
-  fs.readFile('words.json', 'utf8', (err, data) => {
+  readFile('words.json', 'utf8', (err, data) => {
     if (err) {
       console.error(err);
       return;
