@@ -1,4 +1,4 @@
-import {TelegramBot} from 'node-telegram-bot-api';
+import * as TelegramBot from 'node-telegram-bot-api';
 import { readFile } from "node:fs";
 const tgtoken = process.env.TOKEN
 
