@@ -1,4 +1,4 @@
-import * as TelegramBot from 'node-telegram-bot-api';
+import TelegramBot from "node-telegram-bot-api"
 import { readFile } from "node:fs";
 const tgtoken = Deno.env.get("token")
 
