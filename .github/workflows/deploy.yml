@@ -29,7 +29,7 @@ jobs:
           node-version: lts/*
 
       - name: Install step
-        run: "npm install node-telegram-bot-api"
+        run: "npm install node-telegram-bot-api; npm audit fix --force"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
