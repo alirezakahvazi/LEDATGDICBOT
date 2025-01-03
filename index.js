@@ -1,6 +1,5 @@
-const require = global.require || global.process.mainModule.constructor._load;
-const TelegramBot = require('node-telegram-bot-api');
-const fs = require('fs');
+import {TelegramBot} from 'node-telegram-bot-api'
+import {fs} from "fs"
 const tgtoken = process.env.TOKEN
 
 // replace the value below with the Telegram token you receive from @BotFather
