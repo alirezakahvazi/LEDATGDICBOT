@@ -1,6 +1,6 @@
 import * as TelegramBot from 'node-telegram-bot-api';
 import { readFile } from "node:fs";
-const tgtoken = process.env.TOKEN
+const tgtoken = Deno.env.get("token")
 
 // replace the value below with the Telegram token you receive from @BotFather
 const token = tgtoken;
